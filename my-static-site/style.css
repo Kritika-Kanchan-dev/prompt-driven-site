@@ -1,0 +1,147 @@
+
+:root {
+  --primary: #A0522D; /*Sienna */
+  --accent: #DEB887; /*Burlywood*/
+  --text: #36454F; /* Charcoal */
+  --background: #F5F5DC; /*Beige*/
+  --focus: #FFD700; /*Gold*/
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: var(--background);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:focus,
+button:focus,
+input:focus {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+
+/*Header*/
+header {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
+}
+
+/*Hero*/
+
+.hero {
+  background-image: url('hero-image.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/*Sections*/
+
+section {
+  padding: 2rem 0;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/*Buttons*/
+
+button {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
+/*Cards*/
+
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+
+/*Footer*/
+
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/*Responsiveness*/
+
+@media (max-width: 768px) {
+  nav li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}

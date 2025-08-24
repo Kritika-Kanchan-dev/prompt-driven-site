@@ -1,0 +1,23 @@
+{
+  "name": "prompt-driven-site",
+  "version": "1.0.0",
+  "description": "A prompt-driven static site generator that uses Gemini to scaffold HTML/CSS/JS.",
+  "type": "module",
+  "bin": {
+    "pds": "./cli.js"
+  },
+  "scripts": {
+    "start": "node cli.js",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "inquirer": "^9.2.22",
+    "prettier": "^3.3.3"
+  },
+  "devDependencies": {
+    "prettier-plugin-ini": "^0.6.0"
+  }
+}
