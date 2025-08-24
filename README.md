@@ -68,12 +68,12 @@ Developed as part of the
    npm install
    ```
 3. Running the project
-  - ##Start the CLI generator:
+  - Start the CLI generator:
    ```bash
    npm start
    ```
   - ➡️ Runs node cli.js
-  - ##Serve the generated site in your browser:
+  - Serve the generated site in your browser:
     ```bash
     npm run serve
     ```
